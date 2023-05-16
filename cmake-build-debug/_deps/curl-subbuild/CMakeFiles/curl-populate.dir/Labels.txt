@@ -1,0 +1,14 @@
+# Target labels
+ curl-populate
+# Source files and their labels
+D:/Prog/Http_quest/cmake-build-debug/_deps/curl-subbuild/CMakeFiles/curl-populate
+D:/Prog/Http_quest/cmake-build-debug/_deps/curl-subbuild/CMakeFiles/curl-populate.rule
+D:/Prog/Http_quest/cmake-build-debug/_deps/curl-subbuild/CMakeFiles/curl-populate-complete.rule
+D:/Prog/Http_quest/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-build.rule
+D:/Prog/Http_quest/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-configure.rule
+D:/Prog/Http_quest/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-download.rule
+D:/Prog/Http_quest/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-install.rule
+D:/Prog/Http_quest/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-mkdir.rule
+D:/Prog/Http_quest/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-patch.rule
+D:/Prog/Http_quest/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-test.rule
+D:/Prog/Http_quest/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-update.rule

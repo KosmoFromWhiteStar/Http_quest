@@ -1,0 +1,21 @@
+# ninja log v5
+0	41	7059728271104936	curl-populate-prefix/src/curl-populate-stamp/curl-populate-mkdir	f5ccaeeb410aab44
+0	41	7059728271104936	D:/Prog/Http_quest/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-mkdir	f5ccaeeb410aab44
+41	3284	7059728303544397	curl-populate-prefix/src/curl-populate-stamp/curl-populate-download	8c9824c4cdd801ac
+41	3284	7059728303544397	D:/Prog/Http_quest/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-download	8c9824c4cdd801ac
+3284	3324	7059728303944759	curl-populate-prefix/src/curl-populate-stamp/curl-populate-update	21d8bcad054475de
+3284	3324	7059728303944759	D:/Prog/Http_quest/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-update	21d8bcad054475de
+3324	3362	7059728304325102	curl-populate-prefix/src/curl-populate-stamp/curl-populate-patch	f266bd8936b204b8
+3324	3362	7059728304325102	D:/Prog/Http_quest/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-patch	f266bd8936b204b8
+3362	3401	7059728304715460	curl-populate-prefix/src/curl-populate-stamp/curl-populate-configure	369e3723bde4c98f
+3362	3401	7059728304715460	D:/Prog/Http_quest/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-configure	369e3723bde4c98f
+3401	3439	7059728305095802	curl-populate-prefix/src/curl-populate-stamp/curl-populate-build	33e0f7148f49a00a
+3401	3439	7059728305095802	D:/Prog/Http_quest/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-build	33e0f7148f49a00a
+3440	3481	7059728305506179	curl-populate-prefix/src/curl-populate-stamp/curl-populate-install	52c1d31ff91348d4
+3440	3481	7059728305506179	D:/Prog/Http_quest/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-install	52c1d31ff91348d4
+3481	3521	7059728305906539	curl-populate-prefix/src/curl-populate-stamp/curl-populate-test	d6c22e212482b250
+3481	3521	7059728305906539	D:/Prog/Http_quest/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-test	d6c22e212482b250
+3521	3575	7059728306457039	CMakeFiles/curl-populate-complete	eb932ff82aff6bfd
+3521	3575	7059728306457039	curl-populate-prefix/src/curl-populate-stamp/curl-populate-done	eb932ff82aff6bfd
+3521	3575	7059728306457039	D:/Prog/Http_quest/cmake-build-debug/_deps/curl-subbuild/CMakeFiles/curl-populate-complete	eb932ff82aff6bfd
+3521	3575	7059728306457039	D:/Prog/Http_quest/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-done	eb932ff82aff6bfd
