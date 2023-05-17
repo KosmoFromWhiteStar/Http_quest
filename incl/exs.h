@@ -14,9 +14,14 @@ bool compare(std::string inP_word, std::string command)
     return true;
 }
 
+void chek()
+{
+    std::cout << "work" << std::endl;
+}
+
 void ex1() {
     std::string t_url = "https://httpbin.org";
-    std::string command = "";
+    std::string command;
     cpr::Response r;
     do{
         std::cout << "Input command: " << std::endl;

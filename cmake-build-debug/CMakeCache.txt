@@ -173,7 +173,7 @@ CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 CMAKE_LINKER:FILEPATH=C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/ld.exe
 
 //make program
-CMAKE_MAKE_PROGRAM:FILEPATH=C:/Program Files/JetBrains/CLion 2022.1.3/bin/ninja/win/x64/ninja.exe
+CMAKE_MAKE_PROGRAM:FILEPATH=C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/ninja/win/x64/ninja.exe
 
 //Flags used by the linker during the creation of modules during
 // all build types.
@@ -414,12 +414,14 @@ CPR_FORCE_WINSSL_BACKEND:BOOL=OFF
 //Set to ON to generate coverage reports.
 CPR_GENERATE_COVERAGE:BOOL=OFF
 
-//Skip searching for Certificate Authority certs. Turn ON systems
+//Skip searching for Certificate Authority certs. Turn ON for systems
 // like iOS where file access is restricted and prevents https
 // from working.
 CPR_SKIP_CA_BUNDLE_SEARCH:BOOL=OFF
 
-//Set to ON to use the Boost.Filesystem library on OSX.
+//Set to ON to use the Boost.Filesystem library. This is useful,
+// on, e.g., Apple platforms, where std::filesystem may not always
+// be available when targeting older OS versions.
 CPR_USE_BOOST_FILESYSTEM:BOOL=OFF
 
 //If enabled we will use the curl lib already installed on this
@@ -772,6 +774,15 @@ cpr_IS_TOP_LEVEL:STATIC=OFF
 cpr_SOURCE_DIR:STATIC=D:/Prog/Http_quest/cmake-build-debug/_deps/cpr-src
 
 //Value Computed by CMake
+lib_BINARY_DIR:STATIC=D:/Prog/Http_quest/cmake-build-debug/incl
+
+//Value Computed by CMake
+lib_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+lib_SOURCE_DIR:STATIC=D:/Prog/Http_quest/incl
+
+//Value Computed by CMake
 zlib_BINARY_DIR:STATIC=D:/Prog/Http_quest/cmake-build-debug/_deps/zlib-build
 
 //Value Computed by CMake
@@ -987,6 +998,7 @@ CMAKE_USE_GSSAPI-ADVANCED:INTERNAL=1
 CMAKE_USE_LIBSSH-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_USE_LIBSSH2
 CMAKE_USE_LIBSSH2-ADVANCED:INTERNAL=1
+CMAKE_USE_SECTRANSP:INTERNAL=OFF
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 CPR_LIBRARIES:INTERNAL=cpr

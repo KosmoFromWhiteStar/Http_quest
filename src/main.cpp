@@ -1,8 +1,7 @@
 #include "exs.h"
 
-
 int main()
 {
-    ex1();
+    chek();
     return 0;
 }

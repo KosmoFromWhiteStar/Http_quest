@@ -41,12 +41,12 @@ endif()
 
 execute_process(
   COMMAND "C:/Program Files/Git/cmd/git.exe" 
-          checkout "0817715923c9705e68994eb52ef9df3f6845beba" --
+          checkout "fc4241a4e15b04b061b85bb9054554587a772b11" --
   WORKING_DIRECTORY "D:/Prog/Http_quest/cmake-build-debug/_deps/cpr-src"
   RESULT_VARIABLE error_code
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to checkout tag: '0817715923c9705e68994eb52ef9df3f6845beba'")
+  message(FATAL_ERROR "Failed to checkout tag: 'fc4241a4e15b04b061b85bb9054554587a772b11'")
 endif()
 
 set(init_submodules TRUE)
