@@ -1,6 +1,8 @@
+#pragma once
 #include <iostream>
-#include <cpr/cpr.h>
+#include "cpr/cpr.h"
 #include <string>
+
 
 bool compare(std::string inP_word, std::string command)
 {
@@ -14,12 +16,8 @@ bool compare(std::string inP_word, std::string command)
     return true;
 }
 
-void chek()
-{
-    std::cout << "work" << std::endl;
-}
 
-void ex1() {
+[[maybe_unused]] void ex1() {
     std::string t_url = "https://httpbin.org";
     std::string command;
     cpr::Response r;
@@ -50,10 +48,57 @@ void ex1() {
     } while (!compare(command, "exit"));
 }
 
-void ex2()
+[[maybe_unused]] void ex2() {
+    cpr::Response r = cpr::Get(cpr::Url("https://httpbin.org/html"),
+                               cpr::Payload({{"accept", "text/html"}}));
+
+    for(unsigned long long i = r.text.find("<h1>") + 4; i < r.text.find("</h1>"); i++)
+    {
+        std::cout << r.text[i];
+    }
+
+}
+
+void ex3()
 {
-    cpr::Response r = cpr::Get(cpr::Url("https://httpbin.org/html"));
+    cpr::Response response;
+    std::string command, str_arg;
+    std::vector <cpr::Pair> pairs;
+    do 
+    {
+        std::cin >> command >> str_arg;
+        if(compare(command, "post"))
+        {
+            //post
+            cpr::Payload payload_arg (pairs.begin(), pairs.end());
+            response = cpr::Post(cpr::Url("https://httpbin.org/post"),payload_arg);
+            break;
+        }
+        else if(compare(command, "get"))
+        {
+            std::string part_path ="?";
+            for(int i = 0; i < pairs.size(); i++)
+            {
+                part_path += pairs[i].key + '=' + pairs[i].value;
+                if(i + 1 != pairs.size()) part_path += "&";
+            }
+            std::cout << part_path;
+            system("Pause");
+            response = cpr::Get(cpr::Url("https://httpbin.org/get" + part_path));
+            break;
+        }
+        else
+        {
+            cpr::Pair temp(command, str_arg);
+            pairs.push_back(temp);
+        }
+    } while (true);
+    
+    std::cout << response.text << std::endl;
+}
 
-    std::cout << r.text << std::endl;
-
+void do_ex() {
+    void (*ex)();
+    ex = ex3;
+    ex();
 }

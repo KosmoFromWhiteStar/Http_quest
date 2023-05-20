@@ -14,9 +14,7 @@ FetchContent_Declare(cpr GIT_REPOSITORY https://github.com/libcpr/cpr.git GIT_TA
 FetchContent_MakeAvailable(cpr)
 
 add_subdirectory(src)
-add_subdirectory(incl)
 
-target_link_libraries(Http_quest PRIVATE lib)
 target_link_libraries(Http_quest PRIVATE cpr::cpr)
 
 

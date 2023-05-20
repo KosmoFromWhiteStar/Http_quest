@@ -2,6 +2,6 @@
 
 int main()
 {
-    chek();
+    do_ex();
     return 0;
 }

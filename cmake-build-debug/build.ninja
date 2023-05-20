@@ -2399,7 +2399,7 @@ build src/CMakeFiles/Http_quest.dir/main.cpp.obj: CXX_COMPILER__Http_quest_Debug
 
 build Http_quest.exe: CXX_EXECUTABLE_LINKER__Http_quest_Debug src/CMakeFiles/Http_quest.dir/main.cpp.obj | _deps/cpr-build/cpr/libcpr.dll.a _deps/curl-build/lib/libcurl-d.dll.a || libcpr.dll libcurl-d.dll
   FLAGS = -g
-  LINK_LIBRARIES = -llib  _deps/cpr-build/cpr/libcpr.dll.a  _deps/curl-build/lib/libcurl-d.dll.a  -lwinmm  -lws2_32  -ladvapi32  -lcrypt32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = _deps/cpr-build/cpr/libcpr.dll.a  _deps/curl-build/lib/libcurl-d.dll.a  -lwinmm  -lws2_32  -ladvapi32  -lcrypt32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = src\CMakeFiles\Http_quest.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

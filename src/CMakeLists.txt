@@ -4,3 +4,4 @@ set(PATH ${CMAKE_SOURCE_DIR}/incl)
 
 add_executable(Http_quest main.cpp ${PATH}/exs.h)
 target_include_directories(Http_quest PUBLIC ${PATH})
+target_link_libraries(Http_quest PRIVATE cpr::cpr)
