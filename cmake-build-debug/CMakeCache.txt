@@ -414,14 +414,12 @@ CPR_FORCE_WINSSL_BACKEND:BOOL=OFF
 //Set to ON to generate coverage reports.
 CPR_GENERATE_COVERAGE:BOOL=OFF
 
-//Skip searching for Certificate Authority certs. Turn ON for systems
+//Skip searching for Certificate Authority certs. Turn ON systems
 // like iOS where file access is restricted and prevents https
 // from working.
 CPR_SKIP_CA_BUNDLE_SEARCH:BOOL=OFF
 
-//Set to ON to use the Boost.Filesystem library. This is useful,
-// on, e.g., Apple platforms, where std::filesystem may not always
-// be available when targeting older OS versions.
+//Set to ON to use the Boost.Filesystem library on OSX.
 CPR_USE_BOOST_FILESYSTEM:BOOL=OFF
 
 //If enabled we will use the curl lib already installed on this

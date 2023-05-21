@@ -3,7 +3,6 @@
 #include "cpr/cpr.h"
 #include <string>
 
-
 bool compare(std::string inP_word, std::string command)
 {
     for (int i = 0; i < inP_word.length() && i < command.length(); i++)
@@ -16,8 +15,7 @@ bool compare(std::string inP_word, std::string command)
     return true;
 }
 
-
-[[maybe_unused]] void ex1() {
+void ex1() {
     std::string t_url = "https://httpbin.org";
     std::string command;
     cpr::Response r;
@@ -48,7 +46,7 @@ bool compare(std::string inP_word, std::string command)
     } while (!compare(command, "exit"));
 }
 
-[[maybe_unused]] void ex2() {
+void ex2() {
     cpr::Response r = cpr::Get(cpr::Url("https://httpbin.org/html"),
                                cpr::Payload({{"accept", "text/html"}}));
 
@@ -66,7 +64,13 @@ void ex3()
     std::vector <cpr::Pair> pairs;
     do 
     {
-        std::cin >> command >> str_arg;
+        std::cin >> command;
+
+        if(!compare(command, "post") && !compare(command, "get"))
+        {
+            std::cin >> str_arg;
+        }
+
         if(compare(command, "post"))
         {
             //post
@@ -82,8 +86,6 @@ void ex3()
                 part_path += pairs[i].key + '=' + pairs[i].value;
                 if(i + 1 != pairs.size()) part_path += "&";
             }
-            std::cout << part_path;
-            system("Pause");
             response = cpr::Get(cpr::Url("https://httpbin.org/get" + part_path));
             break;
         }
@@ -93,7 +95,6 @@ void ex3()
             pairs.push_back(temp);
         }
     } while (true);
-    
     std::cout << response.text << std::endl;
 }
 

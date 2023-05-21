@@ -2043,7 +2043,7 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "Skip searching for Certificate Authority certs. Turn ON for systems like iOS where file access is restricted and prevents https from working."
+					"value" : "Skip searching for Certificate Authority certs. Turn ON systems like iOS where file access is restricted and prevents https from working."
 				}
 			],
 			"type" : "BOOL",
@@ -2055,7 +2055,7 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "Set to ON to use the Boost.Filesystem library. This is useful, on, e.g., Apple platforms, where std::filesystem may not always be available when targeting older OS versions."
+					"value" : "Set to ON to use the Boost.Filesystem library on OSX."
 				}
 			],
 			"type" : "BOOL",
